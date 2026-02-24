@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="title">首页</view>
+  <navigator class="link" url="/pages/test/test">开始测试</navigator>
+</view>
