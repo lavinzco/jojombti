@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="card" wx:if="{{!finished}}">
+    <view class="progress">第 {{currentIndex + 1}} / {{questions.length}} 题</view>
+    <view class="question">{{currentQuestion.title}}</view>
+
+    <view class="options">
+      <button
+        class="option-btn"
+        wx:for="{{currentQuestion.options}}"
+        wx:key="letter"
+        data-letter="{{item.letter}}"
+        bindtap="handleOptionTap"
+      >
+        {{item.text}}
+      </button>
+    </view>
+  </view>
+
+  <view class="card" wx:else>
+    <view class="result-title">你的测试结果</view>
+    <view class="result-type">{{mbtiType}}</view>
+    <button class="restart-btn" bindtap="restartTest">重新测试</button>
+  </view>
+</view>
