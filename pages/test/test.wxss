@@ -1,0 +1,42 @@
+.container {
+  padding: 24rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx;
+}
+
+.progress {
+  color: #666;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+}
+
+.question {
+  font-size: 34rpx;
+  line-height: 1.6;
+  margin-bottom: 30rpx;
+}
+
+.option-btn {
+  margin-bottom: 20rpx;
+}
+
+.result-title {
+  font-size: 30rpx;
+  color: #666;
+  text-align: center;
+}
+
+.result-type {
+  margin-top: 18rpx;
+  font-size: 64rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.restart-btn {
+  margin-top: 36rpx;
+}
