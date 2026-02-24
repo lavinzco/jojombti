@@ -1,0 +1,135 @@
+// data/stands.js
+const standsData = {
+  "INTJ": {
+    "mbtiName": "建筑师",
+    "standName": "世界 (The World)",
+    "user": "迪奥·布兰度 (DIO)",
+    "stats": { "power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "B", "potential": "B" },
+    "quote": "「时间由我掌控，世界臣服于我的脚下。」",
+    "vibe": "你拥有极度缜密的逻辑和宏大的野心，就像DIO一样，总是试图跳出常理，追求对全局的绝对掌控。你的理智足以让时间停滞。"
+  },
+  "INTP": {
+    "mbtiName": "逻辑学家",
+    "standName": "忧郁蓝调 (Moody Blues)",
+    "user": "雷欧·阿帕基",
+    "stats": { "power": "C", "speed": "C", "range": "A", "durability": "A", "precision": "C", "potential": "C" },
+    "quote": "「哪怕只剩我一人，我也要追溯出那个『真相』。」",
+    "vibe": "表面冷漠，内心却对真理有着极致的渴求。你擅长回溯、分析和解构复杂的事物，你的大脑就是一个无限重播真相的放映机。"
+  },
+  "ENTJ": {
+    "mbtiName": "指挥官",
+    "standName": "D4C (Dirty Deeds Done Dirt Cheap)",
+    "user": "法尼·瓦伦泰",
+    "stats": { "power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A" },
+    "quote": "「吾心吾行澄如明镜，所作所为皆为正义。」",
+    "vibe": "天生的领导者与规则制定者。为了达成宏大的目标，你能够毫不犹豫地跨越次元与障碍，你的决断力就是最高效的武器。"
+  },
+  "ENTP": {
+    "mbtiName": "辩论家",
+    "standName": "隐者之紫 (Hermit Purple)",
+    "user": "乔瑟夫·乔斯达",
+    "stats": { "power": "D", "speed": "C", "range": "D", "durability": "A", "precision": "D", "potential": "E" },
+    "quote": "「你的下一句话是——『这怎么可能！』」",
+    "vibe": "不按套路出牌的战术大师。你虽然面板不是最暴力的，但你拥有极强的发散思维和环境利用能力，总能在绝境中用智谋戏弄命运。"
+  },
+  "INFJ": {
+    "mbtiName": "提倡者",
+    "standName": "黄金体验 (Gold Experience)",
+    "user": "乔鲁诺·乔巴纳",
+    "stats": { "power": "C", "speed": "A", "range": "C", "durability": "D", "precision": "C", "potential": "A" },
+    "quote": "「我有一个梦想，并准备为之付出一切。」",
+    "vibe": "你内敛却充满深邃的信念，拥有洞察生命本质的直觉。当你确立了内心的道义，你便能让枯木逢春，爆发出改变世界的『黄金精神』。"
+  },
+  "INFP": {
+    "mbtiName": "调停者",
+    "standName": "牙 (Tusk Act 4)",
+    "user": "乔尼·乔斯达",
+    "stats": { "power": "A", "speed": "B", "range": "A", "durability": "A", "precision": "B", "potential": "A" },
+    "quote": "「那是足以突破绝对防御的，纯粹的『漆黑意志』。」",
+    "vibe": "你敏感、细腻，常常在自我挣扎中前行。但为了守护内心那一抹微光，你会将自己的执念化作无限回旋，爆发出的力量连次元都能贯穿。"
+  },
+  "ENFJ": {
+    "mbtiName": "主人公",
+    "standName": "钢链手指 (Sticky Fingers)",
+    "user": "布鲁诺·布加拉提",
+    "stats": { "power": "A", "speed": "A", "range": "E", "durability": "D", "precision": "C", "potential": "D" },
+    "quote": "「所谓觉悟，就是在漆黑的荒野上开辟出一条理当前进的道路！」",
+    "vibe": "极具人格魅力的团队灵魂。你同理心极强，总是把别人的事当成自己的事。你拉开空间拉链，不是为了逃避，而是为了给绝望的人开辟生路。"
+  },
+  "ENFP": {
+    "mbtiName": "竞选者",
+    "standName": "疯狂钻石 (Crazy Diamond)",
+    "user": "东方仗助",
+    "stats": { "power": "A", "speed": "A", "range": "D", "durability": "B", "precision": "B", "potential": "C" },
+    "quote": "「重塑一切的温柔之拳，绝不原谅触碰底线之人。」",
+    "vibe": "你热情洋溢，充满奇思妙想，拥有治愈他人、重塑残破事物的温柔。但在你的底线（比如发型）被冒犯时，你会爆发出最纯粹的破坏力。"
+  },
+  "ISTJ": {
+    "mbtiName": "物流师",
+    "standName": "杀手皇后 (Killer Queen)",
+    "user": "吉良吉影",
+    "stats": { "power": "A", "speed": "B", "range": "D", "durability": "B", "precision": "B", "potential": "A" },
+    "quote": "「我只想要如同植物一般，平静如水的生活。」",
+    "vibe": "秩序与细节的绝对信徒。你渴望稳定可控的日常，厌恶突发状况。为了维护你的“平静”，你可以极其严谨和决绝地扫除一切障碍。"
+  },
+  "ISFJ": {
+    "mbtiName": "守卫者",
+    "standName": "法皇之绿 (Hierophant Green)",
+    "user": "花京院典明",
+    "stats": { "power": "C", "speed": "B", "range": "A", "durability": "B", "precision": "C", "potential": "D" },
+    "quote": "「无人能避开这半径20米的绿宝石水花！」",
+    "vibe": "温柔克制，内心却有着坚如磐石的底线。你往往隐藏自己的锋芒，习惯在暗处用密集的结界默默守护同伴，是一个真正的忠诚骑士。"
+  },
+  "ESTJ": {
+    "mbtiName": "总经理",
+    "standName": "极恶中队 (Bad Company)",
+    "user": "虹村形兆",
+    "stats": { "power": "B", "speed": "B", "range": "C", "durability": "B", "precision": "C", "potential": "C" },
+    "quote": "「绝对的秩序和纪律，才是不败的军团。」",
+    "vibe": "高度组织化、纪律严明。你相信规则与协作的力量，能够将零散的个体编织成一架精密的战争机器，你的字典里没有妥协与散漫。"
+  },
+  "ESFJ": {
+    "mbtiName": "执政官",
+    "standName": "辣妹 (Spice Girl)",
+    "user": "特里休·乌纳",
+    "stats": { "power": "A", "speed": "A", "range": "C", "durability": "B", "precision": "D", "potential": "C" },
+    "quote": "「柔能克刚，比起坚硬的钢铁，柔软的心才更强大。」",
+    "vibe": "你极度关怀他人的感受，总是试图缓和冲突。你的能力就像赋予物质弹性一样，能化解所有尖锐的冲击，是团队里最可靠的软垫与后盾。"
+  },
+  "ISTP": {
+    "mbtiName": "鉴赏家",
+    "standName": "白金之星 (Star Platinum)",
+    "user": "空条承太郎",
+    "stats": { "power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A" },
+    "quote": "「真是够了……用不着多费口舌，直接揍飞就好。」",
+    "vibe": "人狠话不多，行动永远快于思考的实干派。你拥有绝佳的环境观察力和恐怖的爆发力，不需要复杂的战术，因为极致的精密度与暴力就是你的武器。"
+  },
+  "ISFP": {
+    "mbtiName": "探险家",
+    "standName": "天堂之门 (Heaven's Door)",
+    "user": "岸边露伴",
+    "stats": { "power": "D", "speed": "B", "range": "B", "durability": "B", "precision": "C", "potential": "A" },
+    "quote": "「我拒绝！为了追求最纯粹的真实，我将翻阅你的灵魂。」",
+    "vibe": "充满灵性与自我主义的创作者。你忠于自己的内心感受，对世界有着独特的审美。比起随波逐流，你更愿意亲手翻开并重写人生的书页。"
+  },
+  "ESTP": {
+    "mbtiName": "企业家",
+    "standName": "石之自由 (Stone Free)",
+    "user": "空条徐伦",
+    "stats": { "power": "A", "speed": "B", "range": "C", "durability": "A", "precision": "C", "potential": "A" },
+    "quote": "「无论命运有多么错综复杂，我也要将其化作丝线亲手斩断！」",
+    "vibe": "适应力极强，热衷于在危机中寻找刺激。你行事果敢、毫不拖泥带水，哪怕身处绝境也能迅速解构局势，如细线般灵活穿梭并给与致命一击。"
+  },
+  "ESFP": {
+    "mbtiName": "表演者",
+    "standName": "银色战车 (Silver Chariot)",
+    "user": "简·皮耶尔·波鲁纳雷夫",
+    "stats": { "power": "C", "speed": "A", "range": "C", "durability": "B", "precision": "B", "potential": "C" },
+    "quote": "「用华丽的剑舞，为我逝去的同伴献上镇魂曲！」",
+    "vibe": "情绪外露，幽默且充满激情。你用最直白的爱憎面对世界，虽然偶尔会冲动，但当为了朋友拔剑时，你的光芒与速度将无人能及。"
+  }
+};
+
+module.exports = {
+  standsData: standsData
+}
