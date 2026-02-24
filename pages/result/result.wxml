@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="card">
+    <view class="type">你的 MBTI：{{mbti}}</view>
+    <view class="stand-name">对应替身：{{stand.name}}</view>
+    <view class="stand-user">本体：{{stand.user}}</view>
+    <view class="stand-desc">{{stand.desc}}</view>
+
+    <view class="panel-title">面板属性</view>
+    <view class="panel-item" wx:for="{{panelList}}" wx:key="key">
+      <text>{{item.key}}</text>
+      <text>{{item.value}}</text>
+    </view>
+
+    <button class="action-btn" bindtap="generatePoster">生成海报</button>
+    <button class="action-btn" type="primary" bindtap="savePosterToAlbum" disabled="{{!posterPath}}">
+      保存到相册
+    </button>
+  </view>
+
+  <canvas type="2d" id="posterCanvas" class="poster-canvas"></canvas>
+</view>
