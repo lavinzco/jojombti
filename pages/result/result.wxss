@@ -1,0 +1,41 @@
+.container {
+  padding: 24rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+
+.type {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.stand-name {
+  margin-top: 16rpx;
+  font-size: 32rpx;
+}
+
+.stand-user,
+.stand-desc,
+.panel-title,
+.panel-item {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-btn {
+  margin-top: 20rpx;
+}
+
+.poster-canvas {
+  width: 690rpx;
+  height: 1100rpx;
+  position: fixed;
+  left: -9999rpx;
+  top: -9999rpx;
+}
